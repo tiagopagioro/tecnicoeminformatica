@@ -1,0 +1,15 @@
+Primeira etapa: Copiar o arquivo de imagem de disco (Windows PE) na rede, T:\Publica\!!!!!!RobsonVaamonde\!!!Linux.
+
+
+Segunda etapa: Colar o arquivo na pasta C:\ISO
+
+
+Terceira etapa: Abrir o Virtual Box com Windows ou Linux 
+                Abrir as configurações da máquina virtual e acessar a aba de armazenamento 
+                Criar um novo HD .vdi com mais GB que o que roda o sistema
+                Inserir a imagem de disco do Windows PE no drive óptico: https://imgur.com/XMfehWn
+                Iniciar sua máquina virtual
+
+
+Quarta etapa: Esperar o Boot do Windows PE 
+              Abrir a pasta Utilities 
