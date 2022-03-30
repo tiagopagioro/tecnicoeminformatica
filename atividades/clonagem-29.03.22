@@ -1,3 +1,5 @@
+Clonagem com o Acronis True Image
+
 Primeira etapa: Copiar o arquivo de imagem de disco (Windows PE) na rede, T:\Publica\!!!!!!RobsonVaamonde\!!!Linux.
 
 
@@ -14,6 +16,64 @@ Terceira etapa: Abrir o Virtual Box com Windows ou Linux
 Quarta etapa: Esperar o Boot do Windows PE 
               Abrir a pasta Utilities X:\Users\Default\Desktop\Utilities\Hard Disk Tools\Imaging
               Iniciar o Acronis True Image
+              Nas sessões, acesse a opção Tools & Utilities e clique na opção Clone Disk e marque a alternativa Automatic
+              Na etapa Source Disk. Selecione o HD que seu sistema Windows ou Linux está instalado e depois o seu novo HD
+              Na etapa Destination Disk. Selecione o seu novo HD zerado
+              Na etapa Cloning Method. Copy partitions without changes
+              Na etapa Disk Usage. Selecione de acordo com sua tarefa (minha: To use on another machine)
+              Na etapa Finish. Clique na opção Proceed e aparecerá um aviso, ignore e aperte OK
+
+Quinta etapa: Não consegui proceder pois não possuo a chave de acesso, porém o processo de clonagem é esse.             
+_______________________________________________________________________________________________________________________________________________________________________
+
               
-              	
+Clonagem com o Lazesoft Disk Image & Clone
+
+Primeira etapa: Copiar o arquivo de imagem de disco (Windows PE) na rede, T:\Publica\!!!!!!RobsonVaamonde\!!!Linux.
+
+
+Segunda etapa: Colar o arquivo na pasta C:\ISO
+
+
+Terceira etapa: Abrir o Virtual Box com Windows ou Linux 
+                Abrir as configurações da máquina virtual e acessar a aba de armazenamento 
+                Criar um novo HD .vdi com mais GB que o que roda o sistema
+                Inserir a imagem de disco do Windows PE no drive óptico: https://imgur.com/XMfehWn
+                Iniciar sua máquina virtual
+
+
+Quarta etapa: Esperar o Boot do Windows PE 
+              Abrir a pasta Utilities X:\Users\Default\Desktop\Utilities\Hard Disk Tools\Imaging
+              Inciar o Lazesoft Disk Image & Clone
+              Nas sessões, acesse a Drive Clone e depois Clone Disk
+              Uma janela de clone irá abrir
+              Etapa Select Source Disk: Selecione o HD em que seu sistema está instalado
+              Etapa Select Destination Disk: Selecione o seu novo HD zerado
+              Etapa Edit Disk: Selecionar a opção Copy without resizing partitions
+              Etapa Ready to Clone: Clicar em Star e irá aparecer um aviso, ignore e clique em OK
               
+Quinta etapa: Esperar o disco ser clonado              
+              Após a conclusão da clonagem, irá aparecer a opção de desligar, desligue
+              
+              
+Sexta etapa: Abrir a opção de armazenamento da máquina no Virtual Box e remover a conexão do seu antigo HD
+             Remover o disco do Drive de CD virtual https://imgur.com/a/kAzHsSg
+             Iniciar a máquina.
+             
+             
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
