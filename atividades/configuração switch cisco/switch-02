@@ -1,0 +1,52 @@
+Configuração switch-02
+
+!Acessar o modo EXEC Privilegiado
+enable
+
+    !Configurar a Data e Hora do Switch
+    clock set 19:30:00 28 April 2022 
+
+    !Modo de Configuração Global
+    configure terminal
+
+        !Configuração do hostname (nome do equipamento)
+        hostname sw-02
+
+        !Habilitar a criptografia de senha 
+        service password-encryption
+
+        !Habilitar a marcação de Data e Hora no Log 
+        service timestamps log datetime msec
+
+        !Desativar a Resolução de Nome
+        no ip domain-lookup
+
+        !Configuração da Mensagem do Dia 
+        banner motd #AVISO acesso autorizado somente a funcionarios#
+
+        !Habilitando a senha do modo enable
+        enable secret 123@senac 
+
+        !Criar usuários de administração no Switch
+        username senac secret 123@senac 
+
+        !Acessar a Linha de Console
+        line console 0 
+
+            !Habilitando o login local
+            login local 
+
+            !Habilitando o sincronismo dos Logs 
+            logging synchronous 
+
+            !Habilitando o tempo de inatividade
+            exec-timeout 5 30
+
+            !Sair de todos os Modos 
+            end
+
+    !Salvando as Configurações do Switch
+    copy running-config startup-config      
+
+    !Verificando as Configurações do Switch
+    show running-config    
