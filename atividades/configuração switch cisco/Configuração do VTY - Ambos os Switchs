@@ -1,0 +1,18 @@
+!Configuração do VTY (Terminais Vituais) - Ambos os Switchs
+enable 
+    configure terminal 
+
+        !Habilitando as linhas virtuais 
+        line vty 0 4
+            login local 
+            logging synchronous
+            exec-timeout 5 30 
+
+            !Habilitando o suporte aos Protocolos 
+            transport input all 
+            end
+
+
+     !Salvando as Configurações 
+     write        
+        
