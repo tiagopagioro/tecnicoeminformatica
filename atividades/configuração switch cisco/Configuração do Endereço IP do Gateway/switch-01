@@ -1,0 +1,21 @@
+!Configuração do Endereço IP do Gateway 
+enable
+    configure terminal
+
+    !Configurando o Gateway do Switch 
+    ip default-gateway 192.168.1.254
+
+    !Configurando a VLAN 1 
+    interface vlan 1
+
+        !Configurar a descrição da interface
+        description Interface de SVI do Switch
+
+        !Configurar o Endereço IPv4
+        ip address 192.168.1.250 255.255.255.0
+
+        !Habilitar a Interface SVI
+        no shutdown
+        end
+    write
+show running-config 
