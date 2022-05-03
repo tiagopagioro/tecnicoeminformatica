@@ -34,5 +34,14 @@ exit
 show running-config
 show ip interface brief
 
+!No desktop-02 via acesso remoto
+
+ping 192.168.254
+ping 192.168.1.250
+ping 192.168.1.251
+telnet 192.168.1.254
+telnet 192.168.1.250
+telnet 192.168.1.251
+
 
 
