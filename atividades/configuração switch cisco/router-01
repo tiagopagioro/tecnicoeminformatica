@@ -24,4 +24,7 @@ enable
     write (copy running-config startup-config)
 disable
 exit
+
+show running-config
+show ip interface brief
              
